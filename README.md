@@ -1,1 +1,1 @@
-Compatriot profiles managment
+Compatriot profiles management
