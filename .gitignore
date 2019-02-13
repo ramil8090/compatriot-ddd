@@ -1,0 +1,23 @@
+# phpstorm project files
+/.idea
+.idea
+
+# composer vendor dir
+/runtime
+/web/assets
+#/web/index.php
+
+vendor
+/vendor
+
+#docker files
+.docker
+docker-compose.yml
+.env
+
+/web/.htaccess
+/web/index.php
+
+/web/upload
+#DDD try coding
+/app
