@@ -19,5 +19,3 @@ docker-compose.yml
 /web/index.php
 
 /web/upload
-#DDD try coding
-/app
