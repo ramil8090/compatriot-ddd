@@ -43,7 +43,12 @@ class CompatriotController extends Controller
             $person->load(\Yii::$app->request->post());
             $awards->load(\Yii::$app->request->post());
 
-            $compatriotProfile = $this->compatriotService->createCompatriotProfile(new CreateCompatriotProfileCommand($person->toArray(), $awards->toArray()));
+            $compatriotProfile = $this->compatriotService->createCompatriotProfile(
+                new CreateCompatriotProfileCommand(
+                    $person->toArray(), 
+                    $awards->toArray()
+                )
+            );
         }
         return $compatriotProfile;
     }
@@ -56,7 +61,11 @@ class CompatriotController extends Controller
         if (\Yii::$app->request->isPost) {
             $awards->load(\Yii::$app->request->post());
 
-            $compatriotProfile = $this->compatriotService->changeAwards(new ChangeAwardsCommand($awards->toArray()));
+            $compatriotProfile = $this->compatriotService->changeAwards(
+                new ChangeAwardsCommand(
+                    $awards->toArray()
+                )
+            );
         }
 
         return $compatriotProfile;
